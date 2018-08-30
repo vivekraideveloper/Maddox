@@ -12,9 +12,12 @@
 		80CD005F2138A721003020B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CD005D2138A721003020B0 /* Main.storyboard */; };
 		80CD00612138A723003020B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CD00602138A723003020B0 /* Assets.xcassets */; };
 		80CD00642138A723003020B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CD00622138A723003020B0 /* LaunchScreen.storyboard */; };
+		80CD006F2138AC6B003020B0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD006E2138AC6B003020B0 /* SWRevealViewController.m */; };
+		BDCDBAEECC14EF3679EC1223 /* Pods_Maddox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B133A4DC2C94792F585E673 /* Pods_Maddox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1414E3B0E5FEFC3047F0E5E6 /* Pods-Maddox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maddox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maddox/Pods-Maddox.release.xcconfig"; sourceTree = "<group>"; };
 		80CD00562138A721003020B0 /* Maddox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maddox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CD00592138A721003020B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80CD005B2138A721003020B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,11 @@
 		80CD00602138A723003020B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80CD00632138A723003020B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80CD00652138A723003020B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80CD006C2138AC6A003020B0 /* Maddox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maddox-Bridging-Header.h"; sourceTree = "<group>"; };
+		80CD006D2138AC6B003020B0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		80CD006E2138AC6B003020B0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		9B133A4DC2C94792F585E673 /* Pods_Maddox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maddox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD80E181F0C8710B027ADE00 /* Pods-Maddox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maddox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maddox/Pods-Maddox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCDBAEECC14EF3679EC1223 /* Pods_Maddox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				80CD00582138A721003020B0 /* Maddox */,
 				80CD00572138A721003020B0 /* Products */,
+				EF473EC5567294EC8C3AD190 /* Pods */,
+				D1BF7C49FCE91AEE6D6BCEFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,7 @@
 		80CD00582138A721003020B0 /* Maddox */ = {
 			isa = PBXGroup;
 			children = (
+				80CD006B2138AC0B003020B0 /* Supporting Files */,
 				80CD00592138A721003020B0 /* AppDelegate.swift */,
 				80CD005B2138A721003020B0 /* ViewController.swift */,
 				80CD005D2138A721003020B0 /* Main.storyboard */,
@@ -64,6 +76,33 @@
 			path = Maddox;
 			sourceTree = "<group>";
 		};
+		80CD006B2138AC0B003020B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80CD006D2138AC6B003020B0 /* SWRevealViewController.h */,
+				80CD006E2138AC6B003020B0 /* SWRevealViewController.m */,
+				80CD006C2138AC6A003020B0 /* Maddox-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1BF7C49FCE91AEE6D6BCEFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B133A4DC2C94792F585E673 /* Pods_Maddox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF473EC5567294EC8C3AD190 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD80E181F0C8710B027ADE00 /* Pods-Maddox.debug.xcconfig */,
+				1414E3B0E5FEFC3047F0E5E6 /* Pods-Maddox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80CD00682138A723003020B0 /* Build configuration list for PBXNativeTarget "Maddox" */;
 			buildPhases = (
+				B9BDF69DBB649C1B85A37A44 /* [CP] Check Pods Manifest.lock */,
 				80CD00522138A721003020B0 /* Sources */,
 				80CD00532138A721003020B0 /* Frameworks */,
 				80CD00542138A721003020B0 /* Resources */,
+				F0FD00323C78843EA90AF677 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					80CD00552138A721003020B0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +172,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B9BDF69DBB649C1B85A37A44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maddox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0FD00323C78843EA90AF677 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Maddox/Pods-Maddox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maddox/Pods-Maddox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80CD00522138A721003020B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +224,7 @@
 			files = (
 				80CD005C2138A721003020B0 /* ViewController.swift in Sources */,
 				80CD005A2138A721003020B0 /* AppDelegate.swift in Sources */,
+				80CD006F2138AC6B003020B0 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +366,10 @@
 		};
 		80CD00692138A723003020B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD80E181F0C8710B027ADE00 /* Pods-Maddox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X9VVW4ZPQS;
 				INFOPLIST_FILE = Maddox/Info.plist;
@@ -289,6 +379,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vivekraimaddox.vivekrai.Maddox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Maddox/Supporting Files/Maddox-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,8 +388,10 @@
 		};
 		80CD006A2138A723003020B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1414E3B0E5FEFC3047F0E5E6 /* Pods-Maddox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X9VVW4ZPQS;
 				INFOPLIST_FILE = Maddox/Info.plist;
@@ -307,6 +401,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vivekraimaddox.vivekrai.Maddox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Maddox/Supporting Files/Maddox-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
