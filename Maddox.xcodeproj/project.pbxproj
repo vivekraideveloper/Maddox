@@ -16,6 +16,9 @@
 		80CD00742138B07C003020B0 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD00732138B07C003020B0 /* ChatVC.swift */; };
 		80CD00762138B092003020B0 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD00752138B092003020B0 /* ChannelVC.swift */; };
 		80CD007821396B24003020B0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD007721396B24003020B0 /* GradientView.swift */; };
+		80CD007B2139ACA7003020B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD007A2139ACA7003020B0 /* Constants.swift */; };
+		80CD007D2139B580003020B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD007C2139B580003020B0 /* LoginVC.swift */; };
+		80CD007F2139F898003020B0 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD007E2139F898003020B0 /* CreateAccountVC.swift */; };
 		BDCDBAEECC14EF3679EC1223 /* Pods_Maddox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B133A4DC2C94792F585E673 /* Pods_Maddox.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,9 @@
 		80CD00732138B07C003020B0 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		80CD00752138B092003020B0 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		80CD007721396B24003020B0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		80CD007A2139ACA7003020B0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		80CD007C2139B580003020B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		80CD007E2139F898003020B0 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		9B133A4DC2C94792F585E673 /* Pods_Maddox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maddox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80E181F0C8710B027ADE00 /* Pods-Maddox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maddox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maddox/Pods-Maddox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +77,7 @@
 		80CD00582138A721003020B0 /* Maddox */ = {
 			isa = PBXGroup;
 			children = (
+				80CD00792139AC85003020B0 /* Utilities */,
 				80CD00722138B019003020B0 /* Model */,
 				80CD00712138B00E003020B0 /* View */,
 				80CD00702138B007003020B0 /* Controller */,
@@ -100,6 +107,8 @@
 			children = (
 				80CD00732138B07C003020B0 /* ChatVC.swift */,
 				80CD00752138B092003020B0 /* ChannelVC.swift */,
+				80CD007C2139B580003020B0 /* LoginVC.swift */,
+				80CD007E2139F898003020B0 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,6 +126,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		80CD00792139AC85003020B0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				80CD007A2139ACA7003020B0 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D1BF7C49FCE91AEE6D6BCEFC /* Frameworks */ = {
@@ -257,8 +274,11 @@
 			files = (
 				80CD00742138B07C003020B0 /* ChatVC.swift in Sources */,
 				80CD005C2138A721003020B0 /* ViewController.swift in Sources */,
+				80CD007D2139B580003020B0 /* LoginVC.swift in Sources */,
 				80CD007821396B24003020B0 /* GradientView.swift in Sources */,
 				80CD005A2138A721003020B0 /* AppDelegate.swift in Sources */,
+				80CD007F2139F898003020B0 /* CreateAccountVC.swift in Sources */,
+				80CD007B2139ACA7003020B0 /* Constants.swift in Sources */,
 				80CD006F2138AC6B003020B0 /* SWRevealViewController.m in Sources */,
 				80CD00762138B092003020B0 /* ChannelVC.swift in Sources */,
 			);
